@@ -240,8 +240,8 @@ class LocationDetailsViewModel: ObservableObject {
     @Published var formattedHours: [[String]] = Array(repeating: [], count: 7)
     @Published var msg : OpenHoursStatus = .closed
     init() {
-        self.fetchData()
-//        self.fromJson() // use this for testing without calling the endpoint
+//        self.fetchData()
+        self.fromJson() // use this for testing without calling the endpoint
     }
     
     
@@ -284,7 +284,7 @@ class LocationDetailsViewModel: ObservableObject {
             var end = convertTo12HourFormat(range.end_local_time)
             if start == end && start == "12AM" {
                 formattedHours[dayIndex].append("24 hours")
-            } else if start == "12AM" && ((ind > 0 && openingHours[ind-1].end_local_time == "24:00:00") || (ind == 0 && openingHours.last!.end_local_time == "24:00:00")) {
+            } else if start == "12AM" && ((ind > 0 && openingHours[ind-1].end_local_time == "24:00:00" && openingHours[ind-1].start_local_time != "00:00:00") || (ind == 0 && openingHours.last!.end_local_time == "24:00:00" && openingHours.last!.start_local_time != "00:00:00")) { // if consecutive overnight and the previous is not 24 hours
                 // already included in the next case
                 continue
             } else if end == "12AM" && openingHours[(ind+1)%openingHours.count].start_local_time == "00:00:00" {
@@ -387,18 +387,18 @@ let jsonDataString = """
     },
     {
       "day_of_week": "FRI",
-      "start_local_time": "00:00:00",
+      "start_local_time": "19:00:00",
       "end_local_time": "24:00:00"
     },
     {
       "day_of_week": "SAT",
-      "start_local_time": "14:00:00",
+      "start_local_time": "15:00:00",
       "end_local_time": "24:00:00"
     },
     {
       "day_of_week": "SUN",
       "start_local_time": "00:00:00",
-      "end_local_time": "17:00:00"
+      "end_local_time": "02:00:00"
     }
     
   ]
