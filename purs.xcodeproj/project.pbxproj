@@ -16,7 +16,7 @@
 		D48C4E9E2C17FB5200E0C3BD /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48C4E9D2C17FB5200E0C3BD /* Components.swift */; };
 		D48C4EA02C17FC0C00E0C3BD /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48C4E9F2C17FC0C00E0C3BD /* ViewModels.swift */; };
 		D48C4EA32C1808C100E0C3BD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D48C4EA22C1808C100E0C3BD /* .gitignore */; };
-		D48C4EA52C189DAF00E0C3BD /* FiraSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48C4EA42C189DAF00E0C3BD /* FiraSans-Black.ttf */; };
+		D48C4EA72C189E8400E0C3BD /* FiraSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48C4EA62C189E8400E0C3BD /* FiraSans-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		D48C4E9F2C17FC0C00E0C3BD /* ViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
 		D48C4EA12C18017E00E0C3BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D48C4EA22C1808C100E0C3BD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		D48C4EA42C189DAF00E0C3BD /* FiraSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FiraSans-Black.ttf"; path = "../../../../Downloads/FiraSans-Black.ttf"; sourceTree = "<group>"; };
+		D48C4EA62C189E8400E0C3BD /* FiraSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 		D48C4E5F2C133EEE00E0C3BD /* purs */ = {
 			isa = PBXGroup;
 			children = (
-				D48C4EA42C189DAF00E0C3BD /* FiraSans-Black.ttf */,
+				D48C4EA62C189E8400E0C3BD /* FiraSans-Black.ttf */,
 				D48C4E9F2C17FC0C00E0C3BD /* ViewModels.swift */,
 				D48C4E9D2C17FB5200E0C3BD /* Components.swift */,
 				D48C4E9B2C13F32D00E0C3BD /* Chivo-Regular.ttf */,
@@ -235,7 +235,7 @@
 				D48C4E652C133EEF00E0C3BD /* Assets.xcassets in Resources */,
 				D48C4E962C137E7000E0C3BD /* HindSiliguri-Regular.ttf in Resources */,
 				D48C4EA32C1808C100E0C3BD /* .gitignore in Resources */,
-				D48C4EA52C189DAF00E0C3BD /* FiraSans-Black.ttf in Resources */,
+				D48C4EA72C189E8400E0C3BD /* FiraSans-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
