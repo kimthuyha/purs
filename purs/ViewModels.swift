@@ -240,8 +240,8 @@ class LocationDetailsViewModel: ObservableObject {
     @Published var formattedHours: [[String]] = Array(repeating: [], count: 7)
     @Published var msg : OpenHoursStatus = .closed
     init() {
-//        self.fetchData()
-        self.fromJson() // use this for testing without calling the endpoint
+        self.fetchData()
+//        self.fromJson() // use this for testing without calling the endpoint
     }
     
     
