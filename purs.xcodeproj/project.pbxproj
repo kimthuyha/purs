@@ -16,6 +16,7 @@
 		D48C4E9C2C13F32D00E0C3BD /* Chivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48C4E9B2C13F32D00E0C3BD /* Chivo-Regular.ttf */; };
 		D48C4E9E2C17FB5200E0C3BD /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48C4E9D2C17FB5200E0C3BD /* Components.swift */; };
 		D48C4EA02C17FC0C00E0C3BD /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48C4E9F2C17FC0C00E0C3BD /* ViewModels.swift */; };
+		D48C4EA32C1808C100E0C3BD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D48C4EA22C1808C100E0C3BD /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D48C4E9D2C17FB5200E0C3BD /* Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		D48C4E9F2C17FC0C00E0C3BD /* ViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
 		D48C4EA12C18017E00E0C3BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D48C4EA22C1808C100E0C3BD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,8 @@
 		D48C4E542C133EEE00E0C3BD = {
 			isa = PBXGroup;
 			children = (
+				D48C4EA22C1808C100E0C3BD /* .gitignore */,
+				D48C4EA12C18017E00E0C3BD /* README.md */,
 				D48C4E5F2C133EEE00E0C3BD /* purs */,
 				D48C4E5E2C133EEE00E0C3BD /* Products */,
 			);
@@ -110,7 +114,6 @@
 				D48C4E642C133EEF00E0C3BD /* Assets.xcassets */,
 				D48C4E662C133EEF00E0C3BD /* purs.entitlements */,
 				D48C4E672C133EEF00E0C3BD /* Preview Content */,
-				D48C4EA12C18017E00E0C3BD /* README.md */,
 			);
 			path = purs;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				D48C4E9C2C13F32D00E0C3BD /* Chivo-Regular.ttf in Resources */,
 				D48C4E652C133EEF00E0C3BD /* Assets.xcassets in Resources */,
 				D48C4E962C137E7000E0C3BD /* HindSiliguri-Regular.ttf in Resources */,
+				D48C4EA32C1808C100E0C3BD /* .gitignore in Resources */,
 				D48C4E942C137DAB00E0C3BD /* FiraSans-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
