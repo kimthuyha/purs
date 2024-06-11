@@ -136,6 +136,8 @@ struct Message: View {
                     Text(viewModel.msg.formatMessage())
                         .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.2))
                         .font(.custom("HindSiliguri-Regular", size: 18))
+                        .lineLimit(1) // Prevent text from wrapping
+                        .fixedSize(horizontal: true, vertical: false) // Ensure it stays on one line
                     
                     Circle()
                         .fill(viewModel.msg.getColor())
@@ -150,7 +152,7 @@ struct Message: View {
             if viewModel.isExpanded {
                 Image(systemName: "chevron.up")
                     .foregroundColor(Color(hex: "#333333"))
-                    .font(.system(size: 15, weight: .bold)) // Set size and weight
+                    .font(.system(size: 13, weight: .bold)) // Set size and weight
             } else {
                 Image(systemName: "chevron.right")
                     .foregroundColor(Color(hex: "#333333"))

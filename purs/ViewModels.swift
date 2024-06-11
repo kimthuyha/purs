@@ -78,8 +78,12 @@ enum OpenHoursStatus {
         var start = 0
         
         // Loop till there is an opening time for today
-        while start < openingHours.count && openingHours[start].day_of_week != currentDayString {
+        let currentDayIndex = dayIndex(for: currentDayString)
+        while start < openingHours.count && dayIndex(for: openingHours[start].day_of_week) < currentDayIndex {
             start += 1
+        }
+        if start >= openingHours.count {
+            start = 0
         }
         
         // Check if now is within any of today's range
@@ -130,12 +134,12 @@ enum OpenHoursStatus {
         case .openUntil(let closingTime):
             return "Open until \(convertTo12HourFormat(closingTime))"
         case .reopeningSoon(let closingTime, let nextOpeningTime):
-            return "Open until \(convertTo12HourFormat(closingTime)), reopens at \(convertTo12HourFormat(nextOpeningTime))"
+            return "Open until \(convertTo12HourFormat(closingTime)), reopen at \(convertTo12HourFormat(nextOpeningTime))"
         case .openAgain(let time):
-            return "Opens again at \(convertTo12HourFormat(time))"
+            return "Open again at \(convertTo12HourFormat(time))"
         case .openLater(let day, let time):
             let weekdaysFullNames = ["SUN": "Sunday", "MON": "Monday", "TUE": "Tuesday", "WED": "Wednesday", "THU": "Thursday", "FRI": "Friday", "SAT": "Saturday"]
-            return "Opens \(weekdaysFullNames[day]!) \(convertTo12HourFormat(time))"
+            return "Open \(weekdaysFullNames[day]!) \(convertTo12HourFormat(time))"
         case .closed:
             return "Closed"
         }
@@ -377,13 +381,8 @@ let jsonDataString = """
     },
     {
       "day_of_week": "TUE",
-      "start_local_time": "07:00:00",
-      "end_local_time": "15:00:00"
-    },
-    {
-      "day_of_week": "WED",
-      "start_local_time": "02:00:00",
-      "end_local_time": "23:30:00"
+      "start_local_time": "11:00:00",
+      "end_local_time": "12:30:00"
     },
     {
       "day_of_week": "FRI",
